@@ -1,0 +1,130 @@
+:root {
+    --color-primary: #29a19c;
+    --color-primary-dark: #1f8a85;
+    --color-dark: #151837;
+    --color-text: #6b7280;
+    --color-text-light: #9ca3af;
+    --color-border: #e9e9ee;
+    --color-bg: #ffffff;
+    --color-bg-alt: #f6f7fb;
+    --color-danger: #e0575b;
+    --color-strike: #b6b6c3;
+
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 14px;
+
+    --shadow-card: 0 4px 18px rgba(21, 24, 55, 0.06);
+    --shadow-hover: 0 10px 30px rgba(21, 24, 55, 0.12);
+
+    --container-max: 1180px;
+    --font-base: "Poppins", "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-base);
+    color: var(--color-dark);
+    background: var(--color-bg);
+    -webkit-font-smoothing: antialiased;
+}
+
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.page-heading {
+    text-align: center;
+    margin: 40px 0 32px;
+}
+
+.page-heading .eyebrow {
+    color: var(--color-primary);
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.page-heading h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: none;
+    border-radius: var(--radius-sm);
+    padding: 12px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.18s ease;
+}
+
+.btn-primary {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: var(--color-primary-dark);
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+.btn-outline:hover {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
