@@ -84,3 +84,23 @@
 .price-current {
     color: var(--color-primary);
 }
+
+.product-card-wishlist {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-light);
+    box-shadow: var(--shadow-card);
+}
+
+.product-card-wishlist.is-active {
+    color: var(--color-danger);
+}

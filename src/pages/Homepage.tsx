@@ -2,7 +2,7 @@ import { useState } from "react";
 import ProductCard from "../components/ProductCard";
 import CategoryBanners from "../components/CategoryBanners";
 import ServicesSection from "../components/ServiceSection";
-import FeaturedPosts from "../components/featuredPosts";
+import FeaturedPosts from "../components/FeaturedPosts";
 import Testimonials from "../components/Testimonials";
 import CtaBanner from "../components/CtaBanner";
 import { useGetProductsQuery } from "../features/products/productsApi";

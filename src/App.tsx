@@ -4,15 +4,20 @@ import Footer from "./components/Footer";
 import Homepage from "./pages/Homepage";
 import CartPage from "./pages/CartPage";
 import PlaceHolder from "./pages/PlaceHolder";
+import CartToast from "./components/CartToast";
+import WishlistPage from "./pages/WishlistPage";
 function App() {
   return (
     <>
       <Header />
+      <CartToast />
       <main style={{ flex: 1 }}>
         <Routes>
           <Route path="/" element={<Homepage />} />
 
           <Route path="/cart" element={<CartPage />} />
+
+          <Route path="/wishlist" element={<WishlistPage />} />
 
           <Route path="/about" element={<PlaceHolder title="About" />} />
 

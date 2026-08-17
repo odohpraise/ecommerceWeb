@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { useAppSelector } from "../app/hooks";
 import { selectCartCount } from "../features/cart/cartSelectors";
 import "./Header.css";
+import { selectWishlistCount } from "../features/wishlist/wishlistSelectors";
 
 const NAV_LINKS = [
   { label: "Home", to: "/", hasDropdown: false },
@@ -25,7 +26,7 @@ export default function Header() {
   const cartCount = useAppSelector(selectCartCount);
   // Wishlist isn't part of this assessment's scope, so it's a static
   // display value matching the design rather than live state.
-  const wishlistCount = 1;
+  const wishlistCount = useAppSelector(selectWishlistCount);
 
   return (
     <header className="site-header">
