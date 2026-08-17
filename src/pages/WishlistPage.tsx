@@ -5,7 +5,7 @@ import { removeFromWishlist, clearWishlist } from "../features/wishlist/wishlist
 import { addToCart } from "../features/cart/cartSlice";
 import type { WishlistItem } from "../features/wishlist/wishlistSlice";
 import type { Product } from "../types/product";
-import "./WishlistPage.css";
+import "./wishlistPage.css";
 
 const toProduct = (item: WishlistItem): Product => ({
     id: item.id,
